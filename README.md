@@ -8,7 +8,7 @@ A full-stack Airbnb-inspired vacation rental platform built with the MERN stack.
 [![MongoDB](https://img.shields.io/badge/Database-MongoDB_Atlas-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/atlas)
 [![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE)
 
-**[🌐 View Live App](https://airbnb-clone-five-ashen.vercel.app/)** • **[🔌 API Health Check](https://airbnb-clone-hn3o.onrender.com/api/health)**
+**[🌐 View Live App](https://airbnb-clone-five-ashen.vercel.app/)**
 
 </div>
 
