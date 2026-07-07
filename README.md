@@ -21,6 +21,19 @@ A production-ready, full-stack clone of Airbnb featuring property listings, inte
 
 ---
 
+## 🖼️ Screenshots
+
+### 🏠 Homepage — Browse & Discover Listings
+![Homepage](images/Homepage.png)
+
+### 🛏️ Room Detail — Full Listing View with Booking
+![Room Detail](images/room.png)
+
+### ❤️ Wishlists — Save Your Favourite Stays
+![Wishlists](images/wishlist.png)
+
+---
+
 ## ✨ Features
 
 - 🔐 **Authentication** — Secure register/login with JWT tokens & HTTP-only cookies
