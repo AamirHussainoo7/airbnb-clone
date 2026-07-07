@@ -5,7 +5,6 @@
 A full-stack Airbnb-inspired vacation rental platform built with the MERN stack.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://airbnb-clone-five-ashen.vercel.app/)
-[![API Status](https://img.shields.io/badge/API-Render-46E3B7?style=for-the-badge&logo=render)](https://airbnb-clone-hn3o.onrender.com/api/health)
 [![MongoDB](https://img.shields.io/badge/Database-MongoDB_Atlas-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/atlas)
 [![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE)
 
