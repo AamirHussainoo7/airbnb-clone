@@ -1,0 +1,62 @@
+.trips-page { min-height: 100vh; display: flex; flex-direction: column; }
+.trips-page__main { flex: 1; padding: 40px 0 80px; }
+.trips-page__title { font-size: 32px; font-weight: 700; margin-bottom: 32px; }
+
+.trips-page__empty { text-align: center; padding: 80px 24px; }
+.trips-page__empty-icon { font-size: 64px; margin-bottom: 16px; }
+.trips-page__empty h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+.trips-page__empty p { color: var(--color-gray-2); }
+
+.trips-page__list { display: flex; flex-direction: column; gap: 16px; }
+.trips-page__card {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  position: relative;
+  transition: box-shadow var(--transition-fast);
+}
+.trips-page__card:hover { box-shadow: var(--shadow-md); }
+.trips-page__card--cancelled { opacity: 0.6; }
+.trips-page__card-img {
+  width: 100px;
+  height: 80px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.trips-page__card-img img { width: 100%; height: 100%; object-fit: cover; }
+.trips-page__card-info { flex: 1; }
+.trips-page__card-status {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-success);
+  margin-bottom: 4px;
+}
+.trips-page__card-title { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+.trips-page__card-meta { display: flex; gap: 16px; font-size: 13px; color: var(--color-gray-2); margin-bottom: 8px; flex-wrap: wrap; }
+.trips-page__card-meta span { display: flex; align-items: center; gap: 4px; }
+.trips-page__card-price { font-size: 14px; color: var(--color-dark); }
+.trips-page__cancel-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+.trips-page__cancel-btn:hover { background: var(--color-bg-hover); }
+
+.trips-page__loading { display: flex; flex-direction: column; gap: 16px; }
+.trips-page__skeleton { display: flex; gap: 20px; }
+.trips-page__skeleton-img { width: 100px; height: 80px; border-radius: var(--radius-lg); flex-shrink: 0; }
+.trips-page__skeleton-line { height: 18px; width: 100%; border-radius: var(--radius-sm); }

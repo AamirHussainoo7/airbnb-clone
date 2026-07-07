@@ -1,0 +1,56 @@
+.guest-picker {
+  max-width: 440px;
+}
+.guest-picker__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.guest-picker__row:last-child {
+  border-bottom: none;
+}
+.guest-picker__label {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+.guest-picker__desc {
+  font-size: 13px;
+  color: var(--color-gray-2);
+  margin-top: 2px;
+}
+.guest-picker__controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.guest-picker__btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), opacity var(--transition-fast);
+  color: var(--color-gray-2);
+}
+.guest-picker__btn:hover:not(:disabled) {
+  border-color: var(--color-dark);
+  color: var(--color-dark);
+}
+.guest-picker__btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.guest-picker__count {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-dark);
+  min-width: 20px;
+  text-align: center;
+}

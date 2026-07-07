@@ -1,0 +1,73 @@
+.user-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 240px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  z-index: var(--z-dropdown);
+  padding: 8px 0;
+}
+
+.user-menu__user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+.user-menu__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-gray-1);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.user-menu__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user-menu__name {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-dark);
+}
+.user-menu__email {
+  font-size: 12px;
+  color: var(--color-gray-2);
+}
+
+.user-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 11px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-dark);
+  text-align: left;
+  transition: background var(--transition-fast);
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+.user-menu__item:hover {
+  background: var(--color-bg-hover);
+}
+.user-menu__item--bold {
+  font-weight: 700;
+}
+
+.user-menu__divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 8px 0;
+}

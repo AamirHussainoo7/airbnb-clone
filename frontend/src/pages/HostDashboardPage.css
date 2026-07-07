@@ -1,0 +1,45 @@
+.host-dashboard { min-height: 100vh; display: flex; flex-direction: column; }
+.host-dashboard__main { flex: 1; padding: 40px 0 80px; }
+.host-dashboard__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; }
+.host-dashboard__title { font-size: 32px; font-weight: 700; }
+.host-dashboard__new-btn {
+  display: inline-flex; align-items: center; gap: 6px; padding: 12px 20px;
+  background: var(--color-dark); color: var(--color-white);
+  border-radius: var(--radius-md); font-size: 14px; font-weight: 600;
+  text-decoration: none; transition: opacity var(--transition-fast);
+}
+.host-dashboard__new-btn:hover { opacity: 0.85; }
+
+.host-dashboard__grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+.host-dashboard__card {
+  border: 1px solid var(--color-border); border-radius: var(--radius-xl);
+  overflow: hidden; transition: box-shadow var(--transition-fast);
+}
+.host-dashboard__card:hover { box-shadow: var(--shadow-md); }
+.host-dashboard__card-img { aspect-ratio: 16/10; overflow: hidden; }
+.host-dashboard__card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+.host-dashboard__card:hover .host-dashboard__card-img img { transform: scale(1.04); }
+.host-dashboard__card-info { padding: 16px; }
+.host-dashboard__card-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+.host-dashboard__card-location { font-size: 13px; color: var(--color-gray-2); margin-bottom: 8px; }
+.host-dashboard__card-meta { display: flex; gap: 12px; font-size: 13px; }
+.host-dashboard__card-rating { display: flex; align-items: center; gap: 3px; }
+.host-dashboard__card-actions { padding: 0 16px 16px; }
+.host-dashboard__action-btn {
+  font-size: 13px; font-weight: 600; color: var(--color-dark);
+  text-decoration: underline; padding: 4px 0;
+}
+
+.host-dashboard__empty { text-align: center; padding: 80px 24px; }
+.host-dashboard__empty div { font-size: 64px; margin-bottom: 16px; }
+.host-dashboard__empty h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+.host-dashboard__empty p { color: var(--color-gray-2); margin-bottom: 20px; }
+
+.host-dashboard__skeleton { border-radius: var(--radius-xl); overflow: hidden; }
+.host-dashboard__skeleton-img { height: 200px; border-radius: 0; }
+.host-dashboard__skeleton-line { height: 18px; margin: 16px; border-radius: var(--radius-sm); }
+
+@media (max-width: 1024px) { .host-dashboard__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .host-dashboard__grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,196 @@
+.search-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: var(--z-modal-backdrop);
+}
+
+.search-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-modal);
+  background: var(--color-white);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-bottom: 20px;
+}
+
+/* Tabs */
+.search-modal__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 16px 0;
+}
+.search-modal__tab {
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gray-2);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.search-modal__tab:hover {
+  background: var(--color-bg-hover);
+  color: var(--color-dark);
+}
+.search-modal__tab.active {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+/* Search Bar */
+.search-modal__bar {
+  display: flex;
+  align-items: center;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  margin: 16px 40px;
+  overflow: hidden;
+}
+
+.search-modal__section {
+  flex: 1;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: var(--radius-full);
+  transition: background var(--transition-fast);
+}
+.search-modal__section:hover,
+.search-modal__section.active {
+  background: var(--color-bg);
+}
+.search-modal__section--guests {
+  flex: 1.2;
+}
+
+.search-modal__divider {
+  width: 1px;
+  height: 32px;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+
+.search-modal__label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-dark);
+  margin-bottom: 2px;
+}
+.search-modal__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: var(--color-gray-2);
+  font-family: var(--font-family);
+}
+.search-modal__input::placeholder {
+  color: var(--color-gray-3);
+}
+.search-modal__value {
+  display: block;
+  font-size: 14px;
+  color: var(--color-gray-2);
+}
+
+/* Submit Button */
+.search-modal__submit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  padding: 14px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 6px;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+  flex-shrink: 0;
+}
+.search-modal__submit:hover {
+  background: var(--color-primary-dark);
+  transform: scale(1.02);
+}
+
+/* Panel */
+.search-modal__panel {
+  padding: 0 40px 8px;
+}
+.search-modal__panel-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-dark);
+}
+
+/* Destinations */
+.search-modal__dest-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.search-modal__dest-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-dark);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.search-modal__dest-btn:hover {
+  border-color: var(--color-dark);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.search-modal__dest-icon {
+  font-size: 24px;
+}
+
+/* Calendar */
+.search-modal__calendar {
+  display: flex;
+  justify-content: center;
+}
+.search-modal__calendar .rdrCalendarWrapper {
+  border: none;
+  font-family: var(--font-family);
+}
+.search-modal__calendar .rdrDayToday .rdrDayNumber span::after {
+  background: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .search-modal__bar {
+    flex-direction: column;
+    border-radius: var(--radius-xl);
+    margin: 16px;
+  }
+  .search-modal__section {
+    width: 100%;
+    border-radius: var(--radius-lg);
+  }
+  .search-modal__divider {
+    width: 100%;
+    height: 1px;
+  }
+  .search-modal__panel {
+    padding: 0 16px 8px;
+  }
+  .search-modal__calendar .rdrCalendarWrapper {
+    flex-direction: column;
+  }
+}

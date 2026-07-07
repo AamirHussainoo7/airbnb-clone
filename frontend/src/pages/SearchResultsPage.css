@@ -1,0 +1,4 @@
+.search-results-page { min-height: 100vh; display: flex; flex-direction: column; }
+.search-results-page__main { flex: 1; padding-bottom: 80px; }
+.search-results-page__header { padding: 24px 0 0; }
+.search-results-page__title { font-size: 14px; font-weight: 600; color: var(--color-dark); }
